@@ -8,6 +8,9 @@ public class BinarySearchImpl {
 
     @Autowired
     private SortAlgorithm sortAlgorithm;
+
+    @Autowired
+    private BinarySearchAlgo binarySearchAlgo;
     //Setter Method Injection
 
     public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
@@ -28,8 +31,7 @@ public class BinarySearchImpl {
      
         //2. Search the array
 
-        BinarySearchAlgo b=new BinarySearchAlgo();
-        int x=b.binarySearchAlgo(numbers,0,numbers.length-1,numberToSearch);
+        int x=binarySearchAlgo.binarySearchAlgo(numbers,0,numbers.length-1,numberToSearch);
         //3.Result result
         return x;           //dummy value
     }

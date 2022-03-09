@@ -1,5 +1,8 @@
 package com.demo.springbasic.springbasic;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BinarySearchAlgo {
     public int binarySearchAlgo(int arr[], int l, int r, int key)
     {
