@@ -14,6 +14,7 @@ public class RestApiAdvanceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiAdvanceApplication.class, args);
 	}
+
 	@Bean
 	public LocaleResolver localeResolver(){
 		AcceptHeaderLocaleResolver localeResolver = new AcceptHeaderLocaleResolver();
