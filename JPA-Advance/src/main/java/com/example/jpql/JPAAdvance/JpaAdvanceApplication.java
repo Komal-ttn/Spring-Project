@@ -1,13 +1,13 @@
-package com.learn.Jpql.JpqlDemo;
+package com.example.jpql.JPAAdvance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JpqlDemoApplication {
+public class JpaAdvanceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JpqlDemoApplication.class, args);
+		SpringApplication.run(JpaAdvanceApplication.class, args);
 	}
 
 }

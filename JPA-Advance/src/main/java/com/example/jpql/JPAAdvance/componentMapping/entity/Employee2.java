@@ -1,22 +1,23 @@
-package com.learn.Jpql.JpqlDemo.student.entity;
-
+package com.example.jpql.JPAAdvance.componentMapping.entity;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table
-public class Student {
+@Table(name = "employee2")
+public class Employee2 {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="fname")
     private String firstName;
 
-    @Column(name="lname")
     private String lastName;
-    private int score;
+
+    private int age;
+
+    @Embedded
+    private Salary salary;
+
 
     public int getId() {
         return id;
@@ -42,17 +43,19 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public int getScore() {
-        return score;
+    public int getAge() {
+        return age;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", score=" + score + "]";
+    public Salary getSalary() {
+        return salary;
     }
 
+    public void setSalary(Salary salary) {
+        this.salary = salary;
+    }
 }
