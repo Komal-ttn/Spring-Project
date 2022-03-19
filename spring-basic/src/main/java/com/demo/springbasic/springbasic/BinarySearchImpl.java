@@ -1,5 +1,6 @@
 package com.demo.springbasic.springbasic;
 
+import com.demo.springbasic.springbasic.sort.SortAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

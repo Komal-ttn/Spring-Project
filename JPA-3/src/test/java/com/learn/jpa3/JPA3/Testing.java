@@ -159,7 +159,6 @@ public class Testing {
     //Many to Many
 
     @Test
-    @Rollback(value = true)
     public void testMTMCreate(){
 
         Author author1=new Author();

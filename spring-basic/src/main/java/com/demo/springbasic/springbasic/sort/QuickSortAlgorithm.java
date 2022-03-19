@@ -1,4 +1,4 @@
-package com.demo.springbasic.springbasic;
+package com.demo.springbasic.springbasic.sort;
 
 import org.springframework.stereotype.Component;
 
